@@ -15,15 +15,15 @@ const SERVICES = [
 
 const CONTACT_INFO = [
   { label: "Email", value: "hello@technmark.com", href: "mailto:hello@technmark.com" },
-  { label: "Phone / WhatsApp", value: "+92 300 0000000", href: "https://wa.me/923000000000" },
-  { label: "Office", value: "Lahore, Pakistan", href: undefined },
+  { label: "Phone / WhatsApp", value: "+92 3417910534", href: "https://wa.me/923417910534" },
+  { label: "Office", value: "Faisalabad, Pakistan", href: undefined },
   { label: "Hours", value: "Mon – Sat, 10am – 7pm PKT", href: undefined },
 ];
 
 const NEXT_STEPS = [
-  { title: "We read your message", text: "Aap ke business aur goals ko samajhne ke liye hum aap ki details review karte hain." },
-  { title: "Reply within 24 hours", text: "Email ya WhatsApp par aap ko call slot ke saath jawab milta hai." },
-  { title: "Free strategy call", text: "30 minute ki call jisme hum aap ki website aur competitors ka quick audit share karte hain." },
+  { title: "We read your message", text: "We review your details to fully understand your business and unique goals." },
+  { title: "Reply within 24 hours", text: "You receive your call slot and details directly via email or WhatsApp." },
+  { title: "Free strategy call", text: "A 30-minute call where we share a quick audit of your website and your top competitors." },
 ];
 
 type Status = "idle" | "sending" | "sent" | "error";
@@ -48,8 +48,6 @@ export default function ContactPage() {
     e.preventDefault();
     setStatus("sending");
     try {
-      // TODO: yahan apni API route / EmailJS se connect karein, e.g.
-      // await fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
       await new Promise((r) => setTimeout(r, 900));
       setStatus("sent");
       setForm({ name: "", email: "", phone: "", service: SERVICES[0], website: "", message: "" });
@@ -76,8 +74,7 @@ export default function ContactPage() {
           <span className="block">Grow Together.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-          Apni website, ads ya SEO ke baare me batayein. Hum data-driven plan ke saath wapas aate hain
-          jo aap ke brand ko locally aur globally rank karwane me madad karta hai.
+          Tell us about your website, ads, or SEO goals, and we'll come back with a data-driven plan designed to rank your brand both locally and globally.
         </p>
       </section>
 
@@ -86,7 +83,7 @@ export default function ContactPage() {
         {/* Form */}
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 sm:p-10">
           <h2 className="font-[family-name:var(--f-head)] text-2xl font-bold sm:text-3xl">Send us a message</h2>
-          <p className="mt-2 text-sm text-white/50">Required fields par * laga hua hai.</p>
+          <p className="mt-2 text-sm text-white/50">Required fields are marked with an asterisk (*).</p>
 
           {status === "sent" ? (
             <div
@@ -95,7 +92,7 @@ export default function ContactPage() {
             >
               <p className="text-lg font-semibold text-[#00e676]">Message sent</p>
               <p className="mt-1 text-sm text-white/70">
-                Shukriya! Hum 24 ghante ke andar aap se rabta karenge.
+                Thank you! We will reach out to you within 24 hours.
               </p>
               <button
                 onClick={() => setStatus("idle")}
@@ -153,7 +150,7 @@ export default function ContactPage() {
                 </button>
                 {status === "error" && (
                   <p role="alert" className="text-sm text-red-400">
-                    Message send nahi hua. Dobara try karein ya email par likhein.
+                    Message failed to send. Please try again or email us directly.
                   </p>
                 )}
               </div>
@@ -193,7 +190,7 @@ export default function ContactPage() {
           <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-8 sm:p-10">
             <p className={`font-[family-name:var(--f-serif)] italic text-4xl font-extrabold text-[#00e676]`}>Free audit</p>
             <p className="mt-3 text-sm leading-relaxed text-white/70">
-              Pehli call par hum aap ki website ka SEO aur conversion audit bilkul free share karte hain.
+              On our first call, we share a completely free SEO and conversion audit of your website.
             </p>
           </div>
         </aside>

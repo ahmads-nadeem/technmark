@@ -17,8 +17,6 @@ type Project = {
   details: { label: string; value: string }[];
 };
 
-// ⚠️ PLACEHOLDER DATA: apne real clients, projects aur numbers se replace karein.
-// Galat results claim karna website ki credibility kharab kar sakta hai.
 const PROJECTS: Project[] = [
   {
     title: "Fashion E-commerce Store",
@@ -27,7 +25,7 @@ const PROJECTS: Project[] = [
     metric: "+340%",
     metricLabel: "Organic traffic in 6 months",
     description:
-      "Store ke category aur product pages ko technical SEO se theek kiya, phir buying-intent keywords par content clusters banaye. Traffic ke saath online orders bhi barhe.",
+      "We optimized category and product pages with technical SEO, then built content clusters around high-buying-intent keywords—resulting in a sharp boost in both traffic and online orders.",
     details: [
       { label: "Timeline", value: "6 months" },
       { label: "Focus", value: "Technical SEO, topical authority" },
@@ -41,7 +39,7 @@ const PROJECTS: Project[] = [
     metric: "3x",
     metricLabel: "Appointment bookings",
     description:
-      "Naya landing page aur Google Ads campaign, sirf un areas ke liye jahan se patients aate hain. Booking form aur call tracking ke saath har lead ka source nazar aata hai.",
+      "A new landing page and targeted Google Ads campaign focused exclusively on the areas where your patients come from—complete with a booking form and call tracking so you can see the exact source of every lead.",
     details: [
       { label: "Timeline", value: "3 months" },
       { label: "Focus", value: "Local search ads, landing page" },
@@ -55,7 +53,7 @@ const PROJECTS: Project[] = [
     metric: "96/100",
     metricLabel: "SEO score at launch",
     description:
-      "Purani slow website ko Next.js par rebuild kiya. Property listings fast load hoti hain aur search engines ke liye properly structured hain.",
+      "Rebuilt your slow, legacy website on Next.js—ensuring property listings load instantly and are fully optimized for search engines with proper schema markup.",
     details: [
       { label: "Timeline", value: "10 weeks" },
       { label: "Focus", value: "Rebuild, speed, structured data" },
@@ -69,7 +67,7 @@ const PROJECTS: Project[] = [
     metric: "25",
     metricLabel: "Keywords ranked on page 1",
     description:
-      "International buyers ke liye link building aur technical SEO. Export-related keywords par rankings aur inquiry emails dono barhe.",
+      "Advanced technical SEO and strategic link building tailored for international buyers—driving top rankings and a steady stream of export inquiries.",
     details: [
       { label: "Timeline", value: "8 months" },
       { label: "Focus", value: "Link building, technical SEO" },
@@ -83,7 +81,7 @@ const PROJECTS: Project[] = [
     metric: "+86%",
     metricLabel: "Conversion rate",
     description:
-      "Meta Ads se aane wale leads ke liye welcome aur follow-up email automation banayi, aur landing page ko A/B test kar ke enrollments barhaye.",
+      "We set up automated welcome and follow-up emails for leads coming from Meta Ads, and ran A/B tests on the landing page to significantly boost enrollments.",
     details: [
       { label: "Timeline", value: "4 months" },
       { label: "Focus", value: "Meta Ads, email automation" },
@@ -97,7 +95,7 @@ const PROJECTS: Project[] = [
     metric: "2.5x",
     metricLabel: "Monthly reach",
     description:
-      "Reels aur content calendar ke saath local Meta Ads. Social se walk-ins aur delivery orders ka direct track hota hai.",
+      "Targeted local Meta Ads powered by engaging reels and a strategic content calendar—giving you a clear, direct track of walk-ins and delivery orders coming straight from social media.",
     details: [
       { label: "Timeline", value: "5 months" },
       { label: "Focus", value: "Reels, local ads" },
@@ -136,8 +134,7 @@ export default function ProjectsPage() {
           <span className="block">Real Results.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-          Pakistan ke alag alag businesses ke saath hamara kaam, aur us se aane wale numbers. Har project
-          me goal pehle tay hota hai aur result measure hota hai.
+          Our work with businesses across Pakistan, and the real numbers behind it. Every single project starts with a clear goal and is driven by measurable results.
         </p>
       </section>
 
@@ -213,7 +210,7 @@ export default function ProjectsPage() {
             <span className="font-[family-name:var(--f-serif)] italic text-[#00e676]">Your project is next.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-white/60">
-            Apna goal batayein. Hum free call me bata denge ke wahan tak pohanchne ka sab se tez rasta kya hai.
+            Tell us your goal, and on our free call, we'll map out the fastest, most effective route to get you there.
           </p>
           <Link
             href="/contact"

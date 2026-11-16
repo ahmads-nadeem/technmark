@@ -15,91 +15,91 @@ type Service = {
   result: string;
 };
 
-// Footer ki list ke mutabiq: SEO, Web Dev, Social Media, PPC & Ads, Content, Email
+
 const SERVICES: Service[] = [
   {
     id: "seo",
     title: "SEO Services",
     summary:
-      "Google par wo keywords rank karwana jin par aap ke customers search karte hain. Technical fixes, authority aur content ek hi plan me.",
+      "Ranking the keywords on Google that your customers are actually searching for. Technical fixes, authority, and content all in one plan.",
     includes: [
-      "Technical SEO audit aur fixes",
+      "Technical SEO audit & fixes",
       "Link building (high-authority backlinks)",
-      "Topical authority aur content clusters",
-      "Keyword research aur on-page SEO",
-      "Monthly ranking aur traffic reports",
+      "Topical authority and content clusters",
+      "Keyword research & on-page SEO",
+      "Monthly ranking & traffic reports",
     ],
-    result: "Organic traffic jo har mahine barhta hai",
+    result: "Organic traffic that grows every single month.",
   },
   {
     id: "web-development",
     title: "Web Development",
     summary:
-      "Tez, mobile-friendly websites jo SEO ke liye bani hon aur visitors ko inquiries me badlen.",
+      "Fast, mobile-friendly websites built for SEO that convert visitors into inquiries.",
     includes: [
       "Next.js / React business websites",
-      "Landing pages aur campaign pages",
+      "Landing pages and campaign pages",
       "E-commerce stores",
-      "Speed aur Core Web Vitals optimization",
-      "Admin dashboard aur form integrations",
+      "Speed and Core Web Vitals optimization",
+      "Admin dashboard and form integrations",
     ],
-    result: "Website jo sirf dikhti nahi, convert bhi karti hai",
+    result: "A website that doesn't just look good, it converts.",
   },
   {
     id: "social-media",
     title: "Social Media",
     summary:
-      "Facebook, Instagram aur LinkedIn par aisi presence jo audience banaye aur brand ko trust dilaye.",
+      "A presence on Facebook, Instagram, and LinkedIn that builds an audience and establishes brand trust.",
     includes: [
-      "Content calendar aur post design",
-      "Reels aur short video ideas",
+      "Content calendar & post design",
+      "Reels & short video ideas",
       "Community management",
-      "Profile setup aur optimization",
+      "Profile setup and optimization",
       "Monthly engagement reports",
     ],
-    result: "Active audience aur steady brand recognition",
+    result: "Active audience and steady brand recognition",
   },
   {
     id: "ppc-ads",
     title: "PPC & Ads",
     summary:
-      "Paid campaigns jo sahi logon tak pohanchti hain aur har rupay ka hisaab dikhati hain.",
+      "Paid campaigns that reach the right people and show a clear return on every single rupee.",
     includes: [
       "Google Ads (Search, Display, Shopping)",
       "Meta Ads (Facebook aur Instagram)",
       "Retargeting campaigns",
       "Conversion tracking setup",
-      "A/B testing aur budget optimization",
+      "A/B testing and budget optimization",
     ],
-    result: "Kam cost par zyada leads aur sales",
+    result: "More leads and sales at a lower cost.",
   },
   {
     id: "content-marketing",
     title: "Content Marketing",
     summary:
-      "Aisa content jo search me milta hai, audience ke sawalon ka jawab deta hai aur sale ki taraf le jata hai.",
+      "Content that shows up in search, answers your audience's questions, and drives sales.",
     includes: [
       "SEO blog articles",
       "Website copywriting",
-      "Case studies aur guides",
-      "Topic research aur content strategy",
+      "Case studies and guides",
+      "Topic research and content strategy",
       "Content refresh for old pages",
     ],
-    result: "Authority aur traffic jo waqt ke saath compound hota hai",
+    result: "Authority and traffic that compound over time.",
   },
   {
     id: "email-marketing",
     title: "Email Marketing",
     summary:
-      "Apne existing leads aur customers ko automated emails se wapas la kar repeat sales barhana.",
+      "Re-engaging your existing leads and customers through automated emails to drive repeat sales.",
     includes: [
-      "Welcome aur follow-up automation",
-      "Newsletters aur promotions",
+      "Welcome and follow-up automation",
+      "Newsletters & promotions",
       "List segmentation",
-      "Abandoned cart aur re-engagement flows",
-      "Open aur click rate reporting",
+      "Abandoned cart and re-engagement flows",
+      "Open and click rate reporting",
     ],
-    result: "Repeat customers bina naye ad spend ke",
+    result: "Repeat customers without spending a single rupee on new ads.",
   },
 ];
 
@@ -116,8 +116,7 @@ export default function ServicesPage() {
           <span className="block">One Agency.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-          SEO se le kar ads, website aur email tak, hum aap ki poori digital growth ek hi jagah sambhalte
-          hain. Sab services ek doosre ke saath mil kar kaam karti hain.
+          From SEO to ads, website development, and email marketing, we handle your entire digital growth under one roof—with every service working together seamlessly.
         </p>
 
         {/* quick jump links */}
@@ -185,8 +184,7 @@ export default function ServicesPage() {
             <span className="font-[family-name:var(--f-serif)] italic text-[#00e676]">Not sure where to start?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-white/60">
-            Free strategy call me hum aap ki website dekh kar batate hain ke pehle kaunsi service se sab se
-            zyada fayda hoga.
+            On our free strategy call, we review your website and tell you exactly which service will give you the highest return first.
           </p>
           <Link
             href="/contact"
