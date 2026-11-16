@@ -135,7 +135,7 @@ export default function ContactPage() {
                   rows={5}
                   value={form.message}
                   onChange={update("message")}
-                  placeholder="Aap ka business kya hai aur aap kya achieve karna chahte hain?"
+                  placeholder="What is your business, and what is your next growth goal?"
                   className={`${field} resize-none`}
                 />
               </div>
@@ -158,7 +158,6 @@ export default function ContactPage() {
           )}
         </div>
 
-        {/* Info card (same style as the hero stat card) */}
         <aside className="flex flex-col gap-8">
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8 sm:p-10">
             <p className={`font-[family-name:var(--f-mono)] text-[11px] uppercase tracking-[0.25em] text-[#00e676]`}>
