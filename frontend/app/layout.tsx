@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
-import { Bricolage_Grotesque, DM_Sans, JetBrains_Mono, Playfair_Display } from 'next/font/google';
+import { DM_Sans, JetBrains_Mono, Playfair_Display } from 'next/font/google';
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ParticleNetwork from '@/components/Particelnetwork';
 import Chatbot from '@/components/Chatbot';
+
 
 const head = Plus_Jakarta_Sans({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--f-head' });
 const body = DM_Sans({ subsets: ['latin'], weight: ['400', '500', '600'], variable: '--f-body' });
@@ -16,7 +17,6 @@ export const metadata: Metadata = {
   title: 'TechnMark — Digital Marketing Agency',
   description: 'Pakistan’s elite digital growth agency — SEO, web development, PPC, content and email automation under one roof.',
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

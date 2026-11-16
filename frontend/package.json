@@ -9,6 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@ai-sdk/google": "^4.0.121",
+    "@ai-sdk/openai": "^4.0.118",
+    "@ai-sdk/react": "^4.0.177",
+    "@google/generative-ai": "^0.24.1",
+    "@n8n/chat": "^1.46.5",
+    "ai": "^7.0.173",
     "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
