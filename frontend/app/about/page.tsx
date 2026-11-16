@@ -25,16 +25,16 @@ const SERVICES = [
 ];
 
 const VALUES = [
-  { title: "Data before opinions", text: "Har decision numbers se hota hai: rankings, traffic aur conversions. Guesswork nahi." },
-  { title: "Honest reporting", text: "Aap ko wohi dikhta hai jo hota hai. Monthly reports me wins bhi hain aur misses bhi." },
-  { title: "Built for conversion", text: "Traffic sirf shuru hai. Hum pages aur ads ko inquiries aur sales ke liye design karte hain." },
+  { title: "Data before opinions", text: "Every decision is driven by numbers: rankings, traffic, and conversions. No guesswork." },
+  { title: "Honest reporting", text: "You see what actually happens. Monthly reports have both wins and misses." },
+  { title: "Built for conversion", text: "Traffic is just the beginning. We design pages and ads for inquiries and sales." },
 ];
 
 const PROCESS = [
-  { title: "Audit", text: "Website, competitors aur keywords ka full analysis." },
-  { title: "Strategy", text: "Priorities, timeline aur KPIs ka clear plan." },
-  { title: "Execute", text: "SEO, development aur ads ek saath chalte hain." },
-  { title: "Measure & scale", text: "Jo kaam kar raha hai us par budget barhate hain." },
+  { title: "Audit", text: "Full analysis of the website, competitors, and keywords." },
+  { title: "Strategy", text: "A clear plan of priorities, timeline, and KPIs." },
+  { title: "Execute", text: "SEO, development, and ads work together." },
+  { title: "Measure & scale", text: "We increase the budget on what is working." },
 ];
 
 export default function AboutPage() {
@@ -51,8 +51,7 @@ export default function AboutPage() {
           <span className="block">You Grow.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-          TechnMark Pakistan ki data-driven digital growth agency hai. Hum deep SEO, conversion-first web
-          development aur paid ads ko mila kar aap ke brand ko locally aur globally unstoppable banate hain.
+          TechnMark is Pakistan's data-driven digital growth agency. We combine deep SEO, conversion-first web development, and paid ads to make your brand unstoppable locally and globally.
         </p>
       </section>
 
@@ -76,13 +75,10 @@ export default function AboutPage() {
           </h2>
           <div className="mt-6 space-y-5 text-base leading-relaxed text-white/65">
             <p>
-              Hum ne TechnMark is liye shuru kiya kyunke bohat se Pakistani businesses achhi website aur
-              ads par paisa lagate hain lekin results nahi milte. Wajah aksar strategy ki kami hoti hai,
-              budget ki nahi.
+              We started TechnMark because many Pakistani businesses invest in a good website and ads, yet don't get results. The reason is usually a lack of strategy, not budget.
             </p>
             <p>
-              Aaj hamari team SEO specialists, developers aur ad strategists par mushtamil hai jo ek hi
-              goal par kaam karti hai: aap ki growth ko measurable banana.
+              Today, our team consists of SEO specialists, developers, and ad strategists working toward a single goal: making your growth measurable.
             </p>
           </div>
         </div>
@@ -90,13 +86,11 @@ export default function AboutPage() {
         <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-8 sm:p-10">
           <h3 className="font-[family-name:var(--f-head)] text-xl font-bold text-[#00e676]">Our mission</h3>
           <p className="mt-3 text-lg leading-relaxed text-white/80">
-            Har business ko wohi digital growth tools dena jo bari companies use karti hain, clear
-            reporting aur real results ke saath.
+            Giving every business the same digital growth tools that large companies use, with clear reporting and real results.
           </p>
           <h3 className="font-[family-name:var(--f-head)] mt-8 text-xl font-bold text-[#00e676]">Our vision</h3>
           <p className="mt-3 text-lg leading-relaxed text-white/80">
-            Pakistan ki sab se trusted digital marketing agency banna, jo local brands ko global markets
-            tak le jaaye.
+            To become Pakistan's most trusted digital marketing agency, taking local brands to global markets.
           </p>
         </div>
       </section>
@@ -157,7 +151,7 @@ export default function AboutPage() {
             <span className={`font-[family-name:var(--f-serif)] italic text-[#00e676]`}>Ready to grow?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-white/60">
-            Apni website ka free SEO aur conversion audit lein. Koi commitment nahi.
+              Get a free SEO and conversion audit for your website. No commitment.
           </p>
           <Link
             href="/contact"
