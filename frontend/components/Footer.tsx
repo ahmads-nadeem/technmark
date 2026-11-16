@@ -17,7 +17,7 @@ const SERVICES = [
 const COMPANY = [
   { label: 'About Us', href: '/about' },
   { label: 'Our Projects', href: '/projects' },
-  { label: 'Blog', href: '/blog' },
+  // { label: 'Blog', href: '/blog' },
   { label: 'Contact', href: '/contact' },
 ];
 
