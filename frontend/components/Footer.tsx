@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       <div className="relative mx-auto flex max-w-[1920px] flex-wrap items-center justify-center gap-4 border-t border-white/10 px-5 py-4 text-center sm:justify-between sm:text-left md:px-[clamp(24px,3.75vw,60px)]">
-        <p className="text-[clamp(14px,1vw,17px)] text-white/35">© {new Date().getFullYear()} TechnMark Digital Marketing Agency. All rights reserved.</p>
+        <p className="text-[clamp(14px,1vw,17px)] text-white/35">© 2026 TechnMark Digital Marketing Agency. All rights reserved.</p>
         <span className={`${M} rounded-full border border-[#0f4a2c] bg-[#0b2a1b] px-6 py-1 text-[13px] text-[#00e676] md:mr-12`}>PK Proudly Pakistani</span>
       </div>
     </footer>
