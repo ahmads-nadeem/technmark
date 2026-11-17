@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -53,7 +53,12 @@ export default function Header() {
       <header className="relative">
         <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between gap-4 px-4 py-5 md:px-[clamp(27px,3.75vw,20px)] md:py-5">
           {/* <Image src={logo} alt="logo" /> */}
-          <img onClick={()=>goHome()} className='cursor-pointer w-[20%]' src="/LogoImg.png" alt="Logo" />
+          <img
+            onClick={() => goHome()}
+            className="cursor-pointer h-auto w-[130px] shrink-0 sm:w-[150px] md:w-[170px] xl:w-[20%] xl:max-w-[300px]"
+            src="/LogoImg.png"
+            alt="Logo"
+          />
 
           <nav className="hidden items-center gap-[clamp(20px,2.4vw,56px)] xl:flex" aria-label="Main">
             {NAV.map((n) => (

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 const SERVICES = [
   "Link Building",
   "Technical SEO",
@@ -57,7 +56,7 @@ export default function ContactPage() {
   };
 
   const field =
-    "w-full rounded-xl border border-white/10 bg-[#0d0d0d] px-4 py-3.5 text-[15px] text-[#eef5ef] placeholder:text-white/30 outline-none transition focus:border-[#00e676] focus:ring-2 focus:ring-[#00e676]/30";
+    "w-full rounded-xl border border-white/10 bg-[#0d0d0d] px-4 py-3.5 text-base sm:text-[15px] text-[#eef5ef] placeholder:text-white/30 outline-none transition focus:border-[#00e676] focus:ring-2 focus:ring-[#00e676]/30";
   const label = `font-[family-name:var(--f-mono)] mb-2 block text-[11px] uppercase tracking-[0.22em] text-[#00e676]`;
 
   return (
@@ -69,17 +68,17 @@ export default function ContactPage() {
         <p className={`font-[family-name:var(--f-mono)] mb-6 text-xs uppercase tracking-[0.3em] text-[#00e676]`}>
           Contact TechnMark
         </p>
-        <h1 className="font-[family-name:var(--f-head)] text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+        <h1 className="font-[family-name:var(--f-head)] text-4xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           <span className={`font-[family-name:var(--f-serif)] italic block font-extrabold text-[#00e676]`}>Let&apos;s Talk.</span>
           <span className="block">Grow Together.</span>
         </h1>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-white/60 sm:text-lg">
-          Tell us about your website, ads, or SEO goals, and we'll come back with a data-driven plan designed to rank your brand both locally and globally.
+          Tell us about your website, ads, or SEO goals, and we&apos;ll come back with a data-driven plan designed to rank your brand both locally and globally.
         </p>
       </section>
 
       {/* ───────── FORM + INFO ───────── */}
-      <section className="relative mx-auto grid max-w-7xl gap-8 px-6 pb-24 sm:px-10 lg:grid-cols-[1.35fr_1fr]">
+      <section className="relative mx-auto grid max-w-7xl gap-8 px-6 pb-24 sm:px-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
         {/* Form */}
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 sm:p-10">
           <h2 className="font-[family-name:var(--f-head)] text-2xl font-bold sm:text-3xl">Send us a message</h2>
@@ -159,7 +158,7 @@ export default function ContactPage() {
         </div>
 
         <aside className="flex flex-col gap-8">
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-8 sm:p-10">
+          <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 sm:p-10">
             <p className={`font-[family-name:var(--f-mono)] text-[11px] uppercase tracking-[0.25em] text-[#00e676]`}>
               Reach us directly
             </p>
@@ -167,7 +166,7 @@ export default function ContactPage() {
               {CONTACT_INFO.map((item) => (
                 <div key={item.label} className="py-5 first:pt-0 last:pb-0">
                   <dt className="text-sm text-white/50">{item.label}</dt>
-                  <dd className="mt-1 text-lg font-semibold">
+                  <dd className="mt-1 break-words text-base font-semibold sm:text-lg">
                     {item.href ? (
                       <a
                         href={item.href}
@@ -186,7 +185,7 @@ export default function ContactPage() {
             </dl>
           </div>
 
-          <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-8 sm:p-10">
+          <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-6 sm:p-10">
             <p className={`font-[family-name:var(--f-serif)] italic text-4xl font-extrabold text-[#00e676]`}>Free audit</p>
             <p className="mt-3 text-sm leading-relaxed text-white/70">
               On our first call, we share a completely free SEO and conversion audit of your website.

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, type ReactNode } from 'react';
 import Link from 'next/link';
@@ -7,7 +7,8 @@ const H = 'font-[family-name:var(--f-head)]';
 const M = 'font-[family-name:var(--f-mono)]';
 const S = 'font-[family-name:var(--f-serif)]';
 const wrap = 'mx-auto w-full max-w-[1920px] px-5 md:px-[clamp(24px,3.75vw,60px)]';
-const btn = `${M} flex block items-center justify-center rounded-full bg-[#06d66a] w-[45%] px-1 py-2 text-[clamp(14px,1vw,19px)] font-bold tracking-[0.12em] text-[#04130b] transition hover:brightness-110`;
+const btnBase = `${M} flex items-center justify-center whitespace-nowrap rounded-full bg-[#06d66a] text-[clamp(14px,1vw,19px)] font-bold tracking-[0.12em] text-[#04130b] transition hover:brightness-110`;
+const btn = `${btnBase} w-full px-6 py-3 sm:w-[45%] sm:px-1 sm:py-2`;
 const card = 'rounded-[28px] bg-[#0b1511]';
 
 /* ---------- Content ---------- */
@@ -149,7 +150,7 @@ export default function Page() {
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link href="/contact" className={`${btn} `}>Get My Free Audit</Link>
-            <Link href="/services" className={`${M} inline-flex items-center rounded-full border border-white/20 px-10 py-2 text-[clamp(14px,1vw,19px)] font-bold tracking-[0.12em] text-white/45 transition hover:border-[#00e676] hover:text-[#00e676]`}>
+            <Link href="/services" className={`${M} inline-flex w-full items-center justify-center rounded-full border border-white/20 px-10 py-3 text-[clamp(14px,1vw,19px)] font-bold tracking-[0.12em] text-white/45 transition hover:border-[#00e676] hover:text-[#00e676] sm:w-auto sm:justify-start sm:py-2`}>
               Explore Services
             </Link>
           </div>
@@ -167,9 +168,9 @@ export default function Page() {
                 <div className={`${M} text-[12px] font-medium uppercase tracking-[0.3em] text-[#00e676]`}>Organic Traffic Growth</div>
                 <div className={`${S} mt-6 text-[clamp(53px,5.5vw,25px)] font-bold leading-none`}>+340%</div>
               </div>
-              <div className="flex justify-start w-[30%] items-center gap-4 rounded-[8px] border border-[#0f4a2c] bg-[#0b2a1b] mt-8 px-2 py-2 text-[clamp(14px,1.312vw,21px)] font-medium leading-tight text-[#00e676]">
+              <div className="flex justify-start w-fit shrink-0 sm:w-[30%] items-center gap-4 rounded-[8px] border border-[#0f4a2c] bg-[#0b2a1b] mt-8 px-3 py-2 sm:px-2 text-[clamp(14px,1.312vw,21px)] font-medium leading-tight text-[#00e676]">
                 <span className="text-[12px]">▲</span>
-                <span className='flex flex-col text-[12px] font-bold'>
+                <span className='flex flex-col whitespace-nowrap text-[12px] font-bold'>
                   <span className='mb-1'>6-Month</span>
                   <span>Result</span>
                 </span>
@@ -328,7 +329,7 @@ export default function Page() {
         </h2>
         <div className="mt-10 md:mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {WHY.map((w) => (
-            <div key={w.t} className={`${card} min-h-[clamp(117px,18.25vw,292px)] p-[clamp(12px,1.875vw,30px)]`}>
+            <div key={w.t} className={`${card} min-h-[clamp(117px,18.25vw,292px)] p-6 md:p-[clamp(12px,1.875vw,30px)]`}>
               <h3 className={`${H} max-w-[260px] text-[clamp(19px,2vw,32px)] font-semibold leading-[1.1]`}>{w.t}</h3>
               <p className="mt-6 text-[clamp(14px,1.375vw,22px)] leading-[1.45] text-white/55">{w.d}</p>
             </div>
@@ -342,7 +343,7 @@ export default function Page() {
         <h2 className={`${H} mt-8 text-[clamp(34px,5.4vw,88px)] font-extrabold leading-[1.05] tracking-tight`}>Built for businesses <br /> <span className='text-[#00e676]'><i>ready to grow.</i></span></h2>
         <div className="mt-10 md:mt-16 grid gap-[clamp(12px,1.875vw,30px)] md:grid-cols-2 lg:grid-cols-4">
           {WHO.map((w) => (
-            <div key={w.t} className="min-h-[clamp(90px,14.125vw,226px)] rounded-[40px] border border-white/25 p-[clamp(12px,1.875vw,30px)]">
+            <div key={w.t} className="min-h-[clamp(90px,14.125vw,226px)] rounded-[40px] border border-white/25 p-6 md:p-[clamp(12px,1.875vw,30px)]">
               <h3 className={`${H} text-[clamp(19px,2vw,32px)] font-semibold`}>{w.t}</h3>
               <p className="mt-5 text-[clamp(14px,1.375vw,22px)] leading-[1.45] text-white/55">{w.d}</p>
             </div>
@@ -382,7 +383,7 @@ export default function Page() {
           Ready to Turn Your <br /> <span className='text-[#00e676]'><i>Digital Presence into a</i></span> <br /> Growth Engine?
         </h2>
         <p className="mt-10 text-[clamp(12px,1.2vw,20px)] text-white">Let&rsquo;s discuss your goals and create a custom strategy to grow your business.</p>
-        <Link href="/contact" className={`${btn} md:w-75 md:px-0 mt-12 mx-auto`}>Get a Free Strategy Call</Link>
+        <Link href="/contact" className={`${btnBase} mx-auto mt-12 w-full max-w-[340px] px-4 py-3 sm:w-auto sm:max-w-none sm:px-10 sm:py-2 md:w-75 md:px-0`}>Get a Free Strategy Call</Link>
       </section>
     </main>
   );

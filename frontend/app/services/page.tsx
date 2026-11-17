@@ -57,7 +57,7 @@ const SERVICES: Service[] = [
       "Profile setup and optimization",
       "Monthly engagement reports",
     ],
-    result: "Active audience and steady brand recognition",
+    result: "Active audience and steady brand recognition.",
   },
   {
     id: "ppc-ads",
@@ -66,7 +66,7 @@ const SERVICES: Service[] = [
       "Paid campaigns that reach the right people and show a clear return on every single rupee.",
     includes: [
       "Google Ads (Search, Display, Shopping)",
-      "Meta Ads (Facebook aur Instagram)",
+      "Meta Ads (Facebook and Instagram)",
       "Retargeting campaigns",
       "Conversion tracking setup",
       "A/B testing and budget optimization",
@@ -111,7 +111,7 @@ export default function ServicesPage() {
         <p className="mb-6 font-[family-name:var(--f-mono)] text-xs uppercase tracking-[0.3em] text-[#00e676]">
           Our Services
         </p>
-        <h1 className="font-[family-name:var(--f-head)] text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+        <h1 className="font-[family-name:var(--f-head)] text-4xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           <span className="block font-[family-name:var(--f-serif)] italic text-[#00e676]">Everything You Need.</span>
           <span className="block">One Agency.</span>
         </h1>
@@ -143,7 +143,7 @@ export default function ServicesPage() {
               className="grid scroll-mt-28 gap-8 py-12 lg:grid-cols-[1fr_1.3fr] lg:gap-16"
             >
               <div>
-                <h2 className="font-[family-name:var(--f-head)] text-3xl font-extrabold sm:text-4xl">
+                <h2 className="font-[family-name:var(--f-head)] text-2xl font-extrabold sm:text-4xl">
                   <span className="font-[family-name:var(--f-serif)] italic text-[#00e676]">{s.title}</span>
                 </h2>
                 <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">{s.summary}</p>
@@ -179,7 +179,7 @@ export default function ServicesPage() {
 
       {/* ───────── CTA ───────── */}
       <section className="relative mx-auto max-w-7xl px-6 pb-28 sm:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-black/40 p-10 text-center sm:p-16">
+        <div className="rounded-[2rem] border border-white/10 bg-black/40 p-6 text-center sm:p-16">
           <h2 className="font-[family-name:var(--f-head)] text-4xl font-extrabold sm:text-6xl">
             <span className="font-[family-name:var(--f-serif)] italic text-[#00e676]">Not sure where to start?</span>
           </h2>

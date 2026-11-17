@@ -129,7 +129,7 @@ export default function ProjectsPage() {
         <p className="mb-6 font-[family-name:var(--f-mono)] text-xs uppercase tracking-[0.3em] text-[#00e676]">
           Our Projects
         </p>
-        <h1 className="font-[family-name:var(--f-head)] text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+        <h1 className="font-[family-name:var(--f-head)] text-4xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           <span className="block font-[family-name:var(--f-serif)] italic text-[#00e676]">Real Work.</span>
           <span className="block">Real Results.</span>
         </h1>
@@ -140,9 +140,9 @@ export default function ProjectsPage() {
 
       {/* ───────── FEATURED PROJECT ───────── */}
       <section className="relative mx-auto max-w-7xl px-6 pb-8 sm:px-10">
-        <article className="grid gap-10 rounded-[2rem] border border-[#00e676]/30 bg-black/40 p-8 sm:p-12 lg:grid-cols-[1fr_1.2fr]">
+        <article className="grid gap-10 rounded-[2rem] border border-[#00e676]/30 bg-black/40 p-6 sm:p-12 lg:grid-cols-[1fr_1.2fr]">
           <div>
-            <p className="font-[family-name:var(--f-serif)] text-7xl font-extrabold italic text-[#00e676] sm:text-8xl">
+            <p className="font-[family-name:var(--f-serif)] text-5xl font-extrabold italic text-[#00e676] sm:text-8xl">
               {featured.metric}
             </p>
             <p className="mt-3 text-lg text-white/70">{featured.metricLabel}</p>
@@ -158,7 +158,7 @@ export default function ProjectsPage() {
 
           <div className="flex flex-col justify-center">
             <p className="text-sm text-white/50">{featured.industry}</p>
-            <h2 className="mt-2 font-[family-name:var(--f-head)] text-3xl font-extrabold sm:text-4xl">
+            <h2 className="mt-2 font-[family-name:var(--f-head)] text-2xl font-extrabold sm:text-4xl">
               {featured.title}
             </h2>
             <p className="mt-5 text-base leading-relaxed text-white/65">{featured.description}</p>
@@ -188,9 +188,9 @@ export default function ProjectsPage() {
 
               <dl className="mt-5 space-y-2 border-t border-white/10 pt-5 text-sm">
                 {p.details.map((d) => (
-                  <div key={d.label} className="flex justify-between gap-4">
+                  <div key={d.label} className="flex flex-wrap justify-between gap-x-4 gap-y-1">
                     <dt className="text-white/50">{d.label}</dt>
-                    <dd className="text-right font-semibold">{d.value}</dd>
+                    <dd className="min-w-0 text-right font-semibold">{d.value}</dd>
                   </div>
                 ))}
               </dl>
@@ -205,7 +205,7 @@ export default function ProjectsPage() {
 
       {/* ───────── CTA ───────── */}
       <section className="relative mx-auto max-w-7xl px-6 pb-28 sm:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-black/40 p-10 text-center sm:p-16">
+        <div className="rounded-[2rem] border border-white/10 bg-black/40 p-6 text-center sm:p-16">
           <h2 className="font-[family-name:var(--f-head)] text-4xl font-extrabold sm:text-6xl">
             <span className="font-[family-name:var(--f-serif)] italic text-[#00e676]">Your project is next.</span>
           </h2>

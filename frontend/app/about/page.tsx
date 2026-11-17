@@ -46,7 +46,7 @@ export default function AboutPage() {
         <p className={`font-[family-name:var(--f-mono)] mb-6 text-xs uppercase tracking-[0.3em] text-[#00e676]`}>
           About TechnMark
         </p>
-        <h1 className="font-[family-name:var(--f-head)] text-5xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
+        <h1 className="font-[family-name:var(--f-head)] text-4xl font-extrabold leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl">
           <span className={`font-[family-name:var(--f-serif)] italic block text-[#00e676]`}>We Build.</span>
           <span className="block">You Grow.</span>
         </h1>
@@ -60,7 +60,7 @@ export default function AboutPage() {
         <div className="grid gap-px overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((s) => (
             <div key={s.label} className="bg-black/40 p-8">
-              <p className={`font-[family-name:var(--f-serif)] italic text-5xl font-extrabold text-[#00e676]`}>{s.value}</p>
+              <p className={`font-[family-name:var(--f-serif)] italic text-4xl font-extrabold text-[#00e676] sm:text-5xl`}>{s.value}</p>
               <p className="mt-3 text-sm leading-relaxed text-white/60">{s.label}</p>
             </div>
           ))}
@@ -83,13 +83,13 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-8 sm:p-10">
+        <div className="rounded-[2rem] border border-[#00e676]/30 bg-[#00e676]/[0.06] p-6 sm:p-10">
           <h3 className="font-[family-name:var(--f-head)] text-xl font-bold text-[#00e676]">Our mission</h3>
-          <p className="mt-3 text-lg leading-relaxed text-white/80">
+          <p className="mt-3 text-base leading-relaxed text-white/80 sm:text-lg">
             Giving every business the same digital growth tools that large companies use, with clear reporting and real results.
           </p>
           <h3 className="font-[family-name:var(--f-head)] mt-8 text-xl font-bold text-[#00e676]">Our vision</h3>
-          <p className="mt-3 text-lg leading-relaxed text-white/80">
+          <p className="mt-3 text-base leading-relaxed text-white/80 sm:text-lg">
             To become Pakistan's most trusted digital marketing agency, taking local brands to global markets.
           </p>
         </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
       {/* ───────── CTA ───────── */}
       <section className="relative mx-auto max-w-7xl px-6 pb-28 sm:px-10">
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-10 text-center sm:p-16">
+        <div className="rounded-[2rem] border border-white/10 bg-white/[0.02] p-6 text-center sm:p-16">
           <h2 className="font-[family-name:var(--f-head)] text-4xl font-extrabold sm:text-6xl">
             <span className={`font-[family-name:var(--f-serif)] italic text-[#00e676]`}>Ready to grow?</span>
           </h2>
