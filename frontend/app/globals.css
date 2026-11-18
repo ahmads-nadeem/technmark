@@ -24,6 +24,17 @@
   --chat--toggle--active--background: #082115 !important;
 
 }
+@layer base {
+  body {
+    /* Default Arrow (e.g., Emerald Green #10B981) */
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24'><path fill='%2300e676' stroke='%2300000' stroke-width='1.5' d='M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z'/></svg>") 4 4, auto;
+  }
+
+  /* Buttons aur Links par hover karne ke liye Custom Pointer */
+  /* a, button, [role="button"] {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24'><path fill='%2300e676' stroke='%2300000' stroke-width='1.5' d='M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z'/></svg>") 12 12, pointer;
+  } */
+}
 
 .n8n-chat .chat-footer,
 .n8n-chat div[class*="footer"] {
